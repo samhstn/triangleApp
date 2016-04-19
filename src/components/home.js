@@ -18,7 +18,7 @@ export default class Home extends Component {
           />
         </Link>
         <Link
-          to='/equilateral'
+          to='/rightAngle'
         >
           <img
             src='../../assets/rightAngledTriangle.png'
@@ -28,7 +28,7 @@ export default class Home extends Component {
           />
         </Link>
         <Link
-          to='/equilateral'
+          to='/obtuse'
         >
           <img src='../../assets/obtuseTriangle.png'
             style={{margin: '3% 5%'}}
