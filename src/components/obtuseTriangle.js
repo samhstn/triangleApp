@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 
-export default class Equilateral extends Component {
+export default class Obtuse extends Component {
   render () {
     return (
       <div>
-        <h1>Equilateral page</h1>
+        <h1>Obtuse Triangle page</h1>
         <Link to='/'><h3>Back to Home</h3></Link>
         <div className='triangleContainer'>
-          <img src='../../assets/equilateralTriangle.png' style={{ margin: '3% 5%' }}/>
+          <img src='../../assets/obtuseTriangle.png' style={{ margin: '3% 5%' }}/>
         </div>
       </div>
     )
