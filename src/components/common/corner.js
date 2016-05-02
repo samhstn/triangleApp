@@ -1,16 +1,10 @@
-import React, { PropTypes } from 'react'
+import React, { PropTypes } from 'react';
+import Text from './text.js';
 
 const Corner = ({textLeft, textTop, name, left, top, color}) => (
   <div>
-    <div style={{
-      position: 'absolute',
-      zIndex: '10',
-      left: textLeft,
-      top: textTop,
-      width: '30px',
-      height: '20px'
-    }}>Corner</div>
-    <div name={ name }
+    <Text text='Corner' textLeft={textLeft} textTop={textTop} />
+    <div name={name}
       style={{
         zIndex: '1',
         position: 'absolute',

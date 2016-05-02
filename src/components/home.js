@@ -9,26 +9,24 @@ export default class Home extends Component {
         <h3 style={{textAlign: 'center', margin: '5% 0'}}>Choose your Triangle</h3>
         <Link to='/equilateral'>
           <img src='../../assets/equilateralTriangle.png'
-            style={{
-              margin: '3% 5%'
-            }}
+            style={styles}
           />
         </Link>
         <Link to='/rightAngle'>
           <img src='../../assets/rightAngledTriangle.png'
-            style={{
-              margin: '3% 5%'
-            }}
+            style={styles}
           />
         </Link>
         <Link to='/obtuse'>
           <img src='../../assets/obtuseTriangle.png'
-            style={{
-              margin: '3% 5%'
-            }}
+            style={styles}
           />
         </Link>
       </div>
     )
   }
 }
+
+const styles = {
+  margin: '3% 5%'
+};
