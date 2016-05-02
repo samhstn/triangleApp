@@ -15,12 +15,12 @@ describe('edgecover', () => {
     const expected = ['div', 'div'];
     expect(actual).toEqual(expected);
   });
-  it('should exactly render a div with 4 props', () => {
+  it('should exactly render a div with 6 props', () => {
     const obj = renderer.getRenderOutput().props;
     const { left: textLeft, top: textTop } = obj.children[0].props.style;
     const { name, style } = obj.children[1].props;
-    const actual = [ name, style.top, style.left, textLeft, textTop ];
-    const expected = ['name', 'top', 'left', 'textLeft', 'textTop'];
+    const actual = [ name, style.top, style.left, style.transform, textLeft, textTop ];
+    const expected = ['name', 'top', 'left', 'rotate(90)', 'textLeft', 'textTop' ];
     expect(actual).toEqual(expected);
   });
 });
