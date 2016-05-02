@@ -25,15 +25,18 @@ export default class Equilateral extends Component {
           <Button name='left' color='blue' left='140px' top='310px' />
           <Button name='right' color='green' left='320px' top='310px' />
           <img src='../../assets/equilateralTriangle.png'
-            style={{
-              position: 'absolute',
-              left: '116px',
-              top: '120px',
-              margin: '30px 20px'
-            }}
+            style={ styles }
           />
         </div>
       </div>
     )
   }
 }
+
+const styles={
+  position: 'absolute',
+  left: '116px',
+  top: '120px',
+  margin: '30px 20px'
+}
+
