@@ -1,20 +1,29 @@
-import React, { Component } from 'react'
+import React, { PropTypes } from 'react'
 
-export default class TextBox extends Component {
-  render () {
-    return (
-      <input type='text'
-        name={this.props.name}
-        style={{
-          zIndex: '10',
-          border: '2px solid ' + this.props.borderColor,
-          position: 'absolute',
-          left: this.props.left,
-          top: this.props.top,
-          width: '30px',
-          height: '20px'
-        }}
-      />
-    )
-  }
+const TextBox = ({ name, borderColor, left, top }) => (
+  <input type='text'
+    name={name}
+    style={{
+      zIndex: '10',
+      border: '2px solid ' + borderColor,
+      position: 'absolute',
+      left: left,
+      top: top,
+      width: '30px',
+      height: '20px'
+    }}
+  />
+)
+
+TextBox.propTypes = {
+  name: PropTypes.string,
+  borderColor: PropTypes.string.isRequired,
+  left: PropTypes.string.isRequired,
+  top: PropTypes.string.isRequired
 }
+
+TextBox.defaultProps = {
+  borderColor: 'red'
+}
+
+export default TextBox 
