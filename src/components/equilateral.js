@@ -21,9 +21,9 @@ export default class Equilateral extends Component {
           <TextBox name='leftEdge' borderColor='purple' top='220px' left='130px' />
           <TextBox name='rightEdge' borderColor='purple' top='220px' left='330px' />
           <TextBox name='bottomEdge' borderColor='purple' top='380px' left='240px' />
-          <Corner name='top' color='red' left='230px' top='150px' textLeft='225px' textTop='50px' />
-          <Corner name='left' color='blue' left='140px' top='310px' textLeft='80px' textTop='80px' />
-          <Corner name='right' color='green' left='320px' top='310px' textLeft='80px' textTop='80px' />
+          <Corner name='top' color='red' left='230px' top='150px' textLeft='230px' textTop='70px' />
+          <Corner name='left' color='blue' left='140px' top='310px' textLeft='30px' textTop='345px' />
+          <Corner name='right' color='green' left='320px' top='310px' textLeft='430px' textTop='345px' />
           <img src='../../assets/equilateralTriangle.png'
             style={ styles }
           />
