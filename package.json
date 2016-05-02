@@ -11,7 +11,8 @@
     "test": "mocha './src/**/*.spec.js' --compilers js:babel-core/register",
     "test:watch": "npm test -- --watch",
     "watch": "webpack --progress --watch",
-    "dev": "webpack-dev-server --hot --inline"
+    "dev": "webpack-dev-server --hot --inline",
+    "start": "nodemon server/index.js"
   },
   "keywords": [],
   "author": "shouston3",
@@ -42,6 +43,8 @@
     "eslint-plugin-react": "^5.0.1",
     "expect": "^1.18.0",
     "expect-jsx": "^2.5.1",
+    "hapi": "^13.3.0",
+    "inert": "^3.2.0",
     "mocha": "^2.4.5",
     "nodemon": "^1.9.2",
     "react-addons-test-utils": "^15.0.2"
