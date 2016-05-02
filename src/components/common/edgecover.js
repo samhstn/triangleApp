@@ -1,32 +1,31 @@
-import React, { Component } from 'react'
+import React, { PropTypes } from 'react'
 
-export default class EdgeCover extends Component {
-  render () {
-    return (
-      <div>
-        <div style={{
-          zIndex: '1',
-          position: 'absolute',
-          left: this.props.textLeft,
-          top: this.props.textTop,
-          width: '30px',
-          height: '20px'
-        }}>Side Length 
-        </div>
-        <div name={this.props.name}
-          style={{
-            zIndex: '1',
-            position: 'absolute',
-            left: this.props.left,
-            top: this.props.top,
-            width: '20px',
-            height: '150px',
-            backgroundColor: 'orange',
-            transform: 'rotate(' + this.props.angle + ')'
-          }}
-        ></div>
-      </div>
-    )
-  }
+const EdgeCover = ({ textLeft, textTop, name, left, top, angle }) => (
+  <div>
+    <div style={{
+      ...styles,
+      left: textLeft,
+      top: textTop,
+      width: '30px',
+      height: '20px'
+    }}>Side Length</div>
+    <div name={name}
+      style={{
+        ...styles,
+        left: left,
+        top: top,
+        width: '20px',
+        height: '150px',
+        backgroundColor: 'orange',
+        transform: 'rotate(' + angle + ')'
+      }}
+    ></div>
+  </div>
+)
+
+const styles = {
+  zIndex: '1',
+  position: 'absolute'
 }
 
+export default EdgeCover 

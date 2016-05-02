@@ -8,8 +8,8 @@
     "url": "git://github.com/shouston3/triangleApp.git"
   },
   "scripts": {
-    "start": "nodemon back/index.js --exec babel-node --presets es2015,stage-1",
-    "test": "mocha './test/**/*.spec.js' --compilers js:babel-core/register",
+    "test": "mocha './src/**/*.spec.js' --compilers js:babel-core/register",
+    "test:watch": "npm test -- --watch",
     "watch": "webpack --progress --watch",
     "dev": "webpack-dev-server --hot --inline"
   },
@@ -43,6 +43,7 @@
     "expect": "^1.18.0",
     "expect-jsx": "^2.5.1",
     "mocha": "^2.4.5",
+    "nodemon": "^1.9.2",
     "react-addons-test-utils": "^15.0.2"
   }
 }
