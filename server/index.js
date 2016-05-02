@@ -35,6 +35,13 @@ server.register(Inert, err => {
         path: 'assets'
       }
     }
+  },
+  {
+    method: 'GET',
+    path: '/{param*}',
+    handler: function (request, reply) {
+      reply.file('./production/index.html');
+    }
   }]);
 
   // Start the server
