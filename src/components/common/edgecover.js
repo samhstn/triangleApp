@@ -8,7 +8,7 @@ const EdgeCover = ({ textLeft, textTop, name, left, top, angle }) => (
       top: textTop,
       width: '30px',
       height: '20px'
-    }}>Side Length</div>
+    }}>Side</div>
     <div name={name}
       style={{
         ...styles,

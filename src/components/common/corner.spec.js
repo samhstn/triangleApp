@@ -4,11 +4,11 @@ import TestUtils from 'react-addons-test-utils';
 import expectJSX from 'expect-jsx';
 expect.extend(expectJSX);
 
-import Button from './button.js';
+import Corner from './corner.js';
 
-describe('button', () => {
+describe('corner', () => {
   const renderer = TestUtils.createRenderer();
-  renderer.render(<Button name='name' left='left' top='top' color='red' />);
+  renderer.render(<Corner name='name' left='left' top='top' color='red' />);
   it('should be of type div', () => {
     const actual = renderer.getRenderOutput().type;
     const expected = 'div';

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import Button from './common/button.js'
+import Corner from './common/corner.js'
 import TextBox from './common/textbox.js'
 import EdgeCover from './common/edgecover.js'
 require('../../public/style.css')
@@ -21,9 +21,9 @@ export default class Equilateral extends Component {
           <TextBox name='leftEdge' borderColor='purple' top='220px' left='130px' />
           <TextBox name='rightEdge' borderColor='purple' top='220px' left='330px' />
           <TextBox name='bottomEdge' borderColor='purple' top='380px' left='240px' />
-          <Button name='top' color='red' left='230px' top='150px' />
-          <Button name='left' color='blue' left='140px' top='310px' />
-          <Button name='right' color='green' left='320px' top='310px' />
+          <Corner name='top' color='red' left='230px' top='150px' />
+          <Corner name='left' color='blue' left='140px' top='310px' />
+          <Corner name='right' color='green' left='320px' top='310px' />
           <img src='../../assets/equilateralTriangle.png'
             style={ styles }
           />

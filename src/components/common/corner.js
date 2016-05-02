@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 
-const Button = ({name, left, top, color}) => (
+const Corner = ({name, left, top, color}) => (
   <div name={ name }
     style={{
       zIndex: '1',
@@ -15,16 +15,16 @@ const Button = ({name, left, top, color}) => (
   ></div>
 );
 
-Button.propTypes = {
+Corner.propTypes = {
   name: PropTypes.string,
   left: PropTypes.string.isRequired,
   top: PropTypes.string.isRequired,
   color: PropTypes.string
 };
 
-Button.defaultProps = {
+Corner.defaultProps = {
   name: 'bottomRightCorner',
   color: 'red'
 }
 
-export default Button;
+export default Corner;
