@@ -1,20 +1,30 @@
-import React, { Component } from 'react'
+import React, { PropTypes } from 'react'
 
-export default class Button extends Component {
-  render () {
-    return (
-      <div name='bottomRightCornerButton'
-        style={{
-          zIndex: '1',
-          position: 'absolute',
-          left: this.props.left,
-          top: this.props.top,
-          width: '50px',
-          height: '50px',
-          borderRadius: '50%',
-          backgroundColor: this.props.color
-        }}
-      ></div>
-    )
-  }
+const Button = ({name, left, top, color}) => (
+  <div name={ name }
+    style={{
+      zIndex: '1',
+      position: 'absolute',
+      left: left,
+      top: top,
+      width: '50px',
+      height: '50px',
+      borderRadius: '50%',
+      backgroundColor: color
+    }}
+  ></div>
+);
+
+Button.propTypes = {
+  name: PropTypes.string,
+  left: PropTypes.string.isRequired,
+  top: PropTypes.string.isRequired,
+  color: PropTypes.string
+};
+
+Button.defaultProps = {
+  name: 'bottomRightCorner',
+  color: 'red'
 }
+
+export default Button;
